@@ -5,7 +5,19 @@ const showEdu = document.getElementById("showEdu");
 const introduction = document.getElementById("introduction");
 const skills = document.getElementById("skills");
 const education = document.getElementById("education");
+const mailTo = document.getElementById("mailTo");
+const callMe = document.getElementById("callMe");
+const reactOut = document.getElementById("reactOut")
+const mailTo2 = document.getElementById("mailTo2");
+import { CALLINGS, CONTACTS, REACHOUTS } from './keys.js'
 
+console.log("Data: ", CALLINGS, CONTACTS, REACHOUTS)
+
+mailTo.href = CONTACTS;
+mailTo.textContent = CONTACTS;
+mailTo2.href = CONTACTS;
+callMe.href = CALLINGS;
+reactOut.href = REACHOUTS;
 const showings = [
      { link: showIntro, content: introduction },
      { link: showSkills, content: skills },
